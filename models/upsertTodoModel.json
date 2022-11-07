@@ -1,0 +1,17 @@
+{
+    "title": "upsertTodoModel",
+    "type": "object",
+    "required": [
+        "todo"
+    ],
+    "properties": {
+        "id": {
+            "type": "number",
+            "description": "Todo id."
+        },
+        "todo": {
+            "type": "string",
+            "description": "Todo text."
+        }
+    }
+}

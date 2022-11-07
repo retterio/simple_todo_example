@@ -1,0 +1,13 @@
+{
+    "title": "removeTodoModel",
+    "type": "object",
+    "required": [
+        "id"
+    ],
+    "properties": {
+        "id": {
+            "type": "number",
+            "description": "Todo id."
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "retter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -b .",
+    "deploy": "export RIO_CLI_URL=api.a101prod.retter.io && rio d --project-id 2g8eht73b --profile goodman"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "14.17.2"
+  },
+  "dependencies": {
+    "@retter/rio-cli": "^1.10.0",
+    "@retter/sdk": "^0.4.0",
+    "tesseract.js": "^2.1.5",
+    "textract": "^2.5.0"
+  }
+}

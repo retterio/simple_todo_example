@@ -1,0 +1,15 @@
+authorizer: index.authorizer
+init: index.init
+getState: index.getState
+methods:
+  - method: UpsertTodo
+    sync: true
+    inputModel: upsertTodoModel
+    handler: index.UpsertTodo
+  - method: GetTodos
+    sync: true
+    handler: index.GetTodos
+  - method: RemoveTodo
+    sync: true
+    inputModel: removeTodoModel
+    handler: index.RemoveTodo

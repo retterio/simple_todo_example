@@ -1,4 +1,4 @@
-# How To Use
+# How Build & Deploy
 
 ### Rio CLI is required to use this project. You can follow instructions of documentation.
 ```bash
@@ -17,10 +17,14 @@ npm i
 
 ## Deployment
 
+
 ```bash
-TERMINAL
-
-cd YourProjectDirectory
-
 rio deploy --project-id YOUR_PROJECT_ID --profile YOUR_PROFILE_NAME
 ```
+
+# How it works
+
+.....
+
+
+

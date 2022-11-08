@@ -15,7 +15,7 @@ export async function getState(data: Data): Promise<Response> {
   return { statusCode: 200, body: data.state }
 }
 
-export async function UpsertTodo(data: Data<UpsertTodoModel>): Promise<StepResponse> {
+export async function upsert(data: Data<UpsertTodoModel>): Promise<StepResponse> {
   try {
     const { todo, id } = data.request.body; // autocompleted
     const { todos } = data.state.public // autocompleted
@@ -44,7 +44,7 @@ export async function UpsertTodo(data: Data<UpsertTodoModel>): Promise<StepRespo
   return data
 }
 
-export async function RemoveTodo(data: Data<RemoveTodoModel>): Promise<StepResponse> {
+export async function remove(data: Data<RemoveTodoModel>): Promise<StepResponse> {
   try {
     const { id } = data.request.body; 
     let { todos } = data.state.public
@@ -68,7 +68,7 @@ export async function RemoveTodo(data: Data<RemoveTodoModel>): Promise<StepRespo
   return data
 }
 
-export async function GetTodos(data: Data): Promise<StepResponse> {
+export async function get(data: Data): Promise<StepResponse> {
   try {
     data.response = {
       statusCode: 200,

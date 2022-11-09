@@ -3,13 +3,15 @@ init: index.init
 getState: index.getState
 methods:
   - method: upsert
-    sync: true
+    type: WRITE
     inputModel: upsertTodoModel
     handler: index.upsert
+
   - method: get
-    sync: true
+    type: READ
     handler: index.get
+
   - method: remove
-    sync: true
+    type: WRITE
     inputModel: removeTodoModel
     handler: index.remove

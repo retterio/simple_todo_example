@@ -24,7 +24,6 @@ rio deploy --project-id YOUR_PROJECT_ID --profile YOUR_PROFILE_NAME
 
 # How it works
 
-.....
-
-
-
+upsert
+remove
+get

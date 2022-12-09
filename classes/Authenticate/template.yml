@@ -1,0 +1,7 @@
+authorizer: index.authorizer
+init: index.init
+getState: index.getState
+methods:
+  - method: generateCustomToken
+    type: STATIC
+    handler: index.generateCustomToken
